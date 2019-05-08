@@ -1,0 +1,12 @@
+Full ER Diagram: https://www.lucidchart.com/documents/edit/7904f564-8891-4cfa-9715-3beab8dbdefc/0
+
+Player (id, username, password, hp, image)
+    FK: company_id references company_id in Plays_In, inventory_id references id in Has_Inventory, role_id references id in Role
+
+Company (id¸ name, image)
+	FK: player_id references id in Player, feed_id references id in Feed, location_id references id in Location, player_id references player_id in Plays_In
+
+Plays_In (total_steps, time_period)
+    FK: company_id references id in Company, player_id references id in Player
+
+Role (id, title, money, hp, description, image)
