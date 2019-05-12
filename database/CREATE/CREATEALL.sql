@@ -1,12 +1,15 @@
 CREATE TABLE the_eureka_trail.player (
     id SMALLINT UNSIGNED NOT NULL PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     hp SMALLINT UNSIGNED NOT NULL,
     company_id INT UNSIGNED NOT NULL,
     inventory_id INT UNSIGNED NOT NULL,
     role_id INT UNSIGNED NOT NULL,
-    image VARCHAR(255) NOT NULL
+    image VARCHAR(255) NOT NULL,
+    authenticated BOOLEAN NOT NULL
 );
 
 CREATE TABLE the_eureka_trail.company (
