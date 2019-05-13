@@ -1,5 +1,7 @@
 CREATE TABLE the_eureka_trail.player (
     id SMALLINT UNSIGNED NOT NULL PRIMARY KEY,
+    fb_id INT UNSIGNED NULL,
+    g_id INT UNSIGNED NULL,
     username VARCHAR(255) NOT NULL,
     firstname VARCHAR(255) NOT NULL,
     lastname VARCHAR(255) NOT NULL,
